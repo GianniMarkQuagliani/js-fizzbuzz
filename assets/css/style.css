@@ -1,14 +1,17 @@
+/* stile per il body */
 body{
     background-color: rgb(17, 61, 75);
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* stile per h1 */
 h1{
     text-align: center;
     color: white;
     font-size: 40px;
 }
 
+/* stile per box */
 .box{
     width: 80px;
     height: 80px;
@@ -20,6 +23,7 @@ h1{
     color: black;
 }
 
+/* stile per il container dei numeri */
 .container{
     display: flex;
     align-items: center;
@@ -27,12 +31,17 @@ h1{
     gap: 15px;
 }
 
+/* Stili per le caselle Fizz */
 .fizz{
     background-color: rgb(65, 214, 163);
 }
+
+/* Stili per le caselle Buzz */
 .buzz{
     background-color: rgb(251, 205, 113);
 }
+
+/* Stili per le caselle FizzBuzz */
 .fizzbuzz{
     background-color: rgb(232, 66, 113);
 }
