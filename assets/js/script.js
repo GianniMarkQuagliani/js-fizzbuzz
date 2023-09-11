@@ -25,18 +25,28 @@ const container = document.querySelector('.container');
 for (let i = 1; i <= 100; i++) {
     // - Creo un elemento HTML di tipo "div"
     const box = document.createElement('div');
-    // 3) Imposto il contenuto dell'elemento con il valore corrente del numero
-    box.textContent = i;
+    // 3) Inizializzo una variabile per il contenuto dell'elemento
+    let content = '';
     // 4) Aggiungo la classe "box" all'elemento
     box.classList.add('box');
     // 5) Verifico per quali numeri è divisibile e classe relativa:
     if (!(i % 3) && !(i % 5)) {
+        content += 'fizzbuzz';
         box.classList.add('fizzbuzz');
     } else if (!(i % 3)) {
+        content += 'fizz';
         box.classList.add('fizz');
     } else if (!(i % 5)) {
+        content += 'buzz';
         box.classList.add('buzz');
     }
+    // Se non è divisibile per 3 o 5, uso il numero stesso come contenuto
+    if (content === '') {
+        content = i.toString();
+    }
+    // Imposto il contenuto dell'elemento con il valore corrente (con "Fizz", "Buzz" o "FizzBuzz")
+    box.textContent = content;
     // 6) Aggiungo l'elemento creato al container nel DOM
     container.append(box);
+    
 }
