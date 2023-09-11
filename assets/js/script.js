@@ -19,3 +19,5 @@ Inizio del ciclo:
 Fine del ciclo
 
 */
+// 1) Richiamo il container per gli elementi seleziono il container tramite il suo selettore CSS.
+const container = document.querySelector('.container');
