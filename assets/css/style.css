@@ -26,3 +26,13 @@ h1{
     flex-wrap: wrap;
     gap: 15px;
 }
+
+.fizz{
+    background-color: rgb(65, 214, 163);
+}
+.buzz{
+    background-color: rgb(251, 205, 113);
+}
+.fizzbuzz{
+    background-color: rgb(232, 66, 113);
+}
