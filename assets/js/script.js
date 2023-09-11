@@ -30,18 +30,17 @@ for (let i = 1; i <= 100; i++) {
     // 4) Aggiungo la classe "box" all'elemento
     box.classList.add('box');
     // 5) Verifico per quali numeri è divisibile e classe relativa:
-    if (!(i % 3) && !(i % 5)) {
+    if (i % 3 === 0 && i % 5 === 0) {
         content += 'fizzbuzz';
         box.classList.add('fizzbuzz');
-    } else if (!(i % 3)) {
+    } else if (i % 3 === 0) {
         content += 'fizz';
         box.classList.add('fizz');
-    } else if (!(i % 5)) {
+    } else if (i % 5 === 0) {
         content += 'buzz';
         box.classList.add('buzz');
-    }
-    // Se non è divisibile per 3 o 5, uso il numero stesso come contenuto
-    if (content === '') {
+    }else {
+        // Se non è divisibile per 3 o 5, uso il numero stesso come contenuto
         content = i.toString();
     }
     // Imposto il contenuto dell'elemento con il valore corrente (con "Fizz", "Buzz" o "FizzBuzz")
